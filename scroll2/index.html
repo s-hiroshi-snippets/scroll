@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>FindxFine.com JavaScript Page Scroll</title>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?2.9.0/build/reset-fonts/reset-fonts.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>
+<script src="http://www.google.com/jsapi"></script>
+<script>google.load("jquery", "1.4");</script>
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="app.js"></script>
+<script src="scroll.js"></script>
+<script type="text/javascript">
+jQuery(function($) {
+    var scroll = App.namespace('scroll');
+    scroll.init('scrollarea', 300);
+});
+</script>
+</head>
+<body>
+    <div id="header">
+        <h1>Exsample</h1>
+        <ul id="nav" class="clearfix">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div id="scrollarea">
+        <div id="home" class="page">
+            <h2>Home</h2>
+            <p>sed luctus nunc. Praesent eget erat sit amet eros sollicitudin scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra,</p>
+            <div class="arrow-right">&gt;</div>
+        <!-- /page --></div>
+
+
+        <div id="service" class="page">
+            <h2>Service</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egestas consectetur ornare? Cras dolor tellus, ornare eu imperdiet in, lobortis ut nibh. Fusce vulputate auctor nisl, ac dapibus sapien lobortis et. Aenean </p>
+            <div class="arrow-right">&gt;</div>
+            <div class="arrow-left">&lt;</div>
+        <!-- /page --></div>
+
+
+        <div id="work" class="page">
+            <h2>Work</h2>
+            <p>Vivamus rhoncus, enim ut fermentum dictum, magna eros placerat odio, gravida convallis magna turpis ut ligula. Mauris in enim sit amet mauris blanditssstae ut enim. </p>
+            <div class="arrow-right">&gt;</div>
+            <div class="arrow-left">&lt;</div>
+        <!-- /page --></div>
+
+
+        <div id="about" class="page">
+            <h2>About</h2>
+            <p>sed luctus nunc. Praesent eget erat sit amet eros sollicitudin scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra,</p>
+            <div class="arrow-right">&gt;</div>
+            <div class="arrow-left">&lt;</div>
+        <!-- /page --></div>
+
+        <div id="contact" class="page">
+            <h2>Contact</h2>
+            <p>Vivamus rhoncus, enim ut fermentum dictum, magna eros placerat odio, gravida convallis magna turpis ut ligula. Mauris in enim sit amet mauris blanditssstae ut enim. </p>
+            <div class="arrow-left">&lt;</div>
+        <!-- /page --></div>
+    <!-- /display --></div>
+</body>
+</html>

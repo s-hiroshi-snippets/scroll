@@ -1,0 +1,96 @@
+@charset "utf-8";
+/**
+ * Copyright 2012 Sawai Hiroshi
+ * http://www.info-town.jp
+ *
+ */
+
+
+/* -------------------------------------------------------------------
+body
+ ------------------------------------------------------------------- */
+body {
+    /* background: url(images/back2.jpg); */
+}
+a:link {
+    color: #666;
+}
+a:visited {
+    color: #666;
+}
+a:hover {
+    color: #666;
+}
+a:active {
+    color: #666;
+}
+/* -------------------------------------------------------------------
+scroll-nav
+ ------------------------------------------------------------------- */
+ul#scroll-nav {
+    width: 740px;
+    margin: 0 auto;
+    border-bottom: 1px solid #333;
+}
+ul#scroll-nav li {
+    float: left;
+}
+ul#scroll-nav li a {
+    display: block;
+    padding:  15px 20px;
+    text-decoration: none;
+    outline: none;
+}
+/* -------------------------------------------------------------------
+page unit of scroll
+ ------------------------------------------------------------------- */
+.page {
+    clear: both;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.page h2 {
+    margin: 2em 2em 1em;
+}
+.page p {
+    margin: 0 2em 1em;
+}
+.page .arrow-right {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 18px;
+    height: 18px;
+    background: #CCC;
+    text-align: center;
+    cursor: pointer;
+}
+.page .arrow-left {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    width: 18px;
+    height: 18px;
+    background: #CCC;
+    text-align: center;
+    cursor: pointer;
+}
+/* -------------------------------------------------------------------
+clearfix
+ ------------------------------------------------------------------- */
+.clearfix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+.clearfix {
+display: inline-table;
+min-height: 1%;
+}
+/* Hides from -mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from -mac */

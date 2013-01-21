@@ -1,0 +1,95 @@
+@charset "utf-8";
+/**
+ * Copyright 2012 Sawai Hiroshi
+ * http://www.info-town.jp
+ *
+ */
+
+
+/* -------------------------------------------------------------------
+body
+ ------------------------------------------------------------------- */
+body {
+}
+a:link {
+    color: #666;
+}
+a:visited {
+    color: #666;
+}
+a:hover {
+    color: #666;
+}
+a:active {
+    color: #666;
+}
+/* -------------------------------------------------------------------
+slide-nav
+ ------------------------------------------------------------------- */
+ul#slide-nav {
+    width: 740px;
+    margin: 0 auto;
+}
+ul#slide-nav li {
+    float: left;
+}
+ul#slide-nav li a {
+    display: block;
+    padding:  15px 20px;
+    text-decoration: none;
+    outline: none;
+}
+/* -------------------------------------------------------------------
+slide-container
+ ------------------------------------------------------------------- */
+#slide-container {
+    width: 100%;
+    height: 400px;
+    margin: 20px auto;
+    background: #EEE;
+}
+/* -------------------------------------------------------------------
+slide-group
+ ------------------------------------------------------------------- */
+.slide-group {
+    position: absolute;
+    /* script caluculate width */
+    height: 400px;
+    background: #666;
+}
+/* -------------------------------------------------------------------
+page unit of slide
+ ------------------------------------------------------------------- */
+.slide-page {
+    clear: both;
+    position: absolute;
+    width: 959px;
+    height: 400px;
+    background: #DDD;
+    border-right: 1px solid #333 !important;
+    z-index: 2;
+}
+.slide-page h2 {
+    margin: 2em 2em 1em;
+}
+.slide-page p {
+    margin: 0 2em 1em;
+}
+/* -------------------------------------------------------------------
+clearfix
+ ------------------------------------------------------------------- */
+.clearfix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+.clearfix {
+display: inline-table;
+min-height: 1%;
+}
+/* Hides from -mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from -mac */
